@@ -12,4 +12,4 @@ Both views are made up of partial views
 
 Screenshots:
 ![Alt text](/assets/screenshots/mainview.JPG "Main View")
-![Alt text](/assets/screenshots/detailsview.JPG "Main View")
+![Alt text](/assets/screenshots/detailsview.JPG "Detail View")
