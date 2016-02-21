@@ -1,0 +1,23 @@
+<div class="round-edged header-details card-wrap">
+
+	<div class="filter-text">Sorting by</div>
+	<select class="dropdown-menu" ng-model="order.field">
+			<option value="@RateTotalAmount">Price</option>
+			<option value="@DoorCount">Doors</option>
+			<option value="@BaggageQuantity">Bag Capacity</option>
+	</select>
+	<div class="filter-text">in</div> 
+	<select class="dropdown-menu" ng-model="order.ascending" ng-options="(item?'increasing':'decreasing') for item in [true, false]"></select>
+	<div class="filter-text">order</div>
+
+	<div class="search-block">
+		<div class="title-field-desc">Search Vendors </div> 
+		<input class="round-edged entry-field" type="text" ng-model="$parent.searchVendor.vendor['@Name']">
+	</div>
+
+	<div class="search-block">
+		<div class="title-field-desc">Makes or Models </div>
+		<input class="round-edged entry-field" type="text" ng-model="$parent.searchMakeModel.Vehicle.VehMakeModel['@Name']">
+	</div>
+
+</div>

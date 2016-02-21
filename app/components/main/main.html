@@ -1,0 +1,6 @@
+<div class="header-card" ng-include src="'app/shared/locationDetailsCard.html'"></div>
+<div class="header-card" ng-include src="'app/shared/searchCard.html'"></div>
+
+<div ng-repeat="vehicleDetail in vehiclesDetails | orderBy: dynamicOrder: !order.ascending | filter: searchVendor | filter: searchMakeModel" ng-click="onVehicleClicked(vehicleDetail)">
+	<div class="repeating-card" ng-include src="'app/shared/vehicleDetailCard.html'"></div>
+</div>

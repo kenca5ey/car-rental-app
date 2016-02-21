@@ -1,0 +1,36 @@
+<div class="round-edged card-wrap">
+
+   <div class="round-edged vehicle-title">{{vehicleDetail.Vehicle['@DoorCount']}} Door {{vehicleDetail.Vehicle.VehMakeModel['@Name']}}</div>
+
+   <img class="vehicle-image" ng-src="{{vehicleDetail.Vehicle.PictureURL}}" alt="Vehicle Image">   
+
+   <div class="vehicle-details">
+      <div>
+         <div>{{vehicleDetail['@Status']}}</div>
+         <div>{{vehicleDetail.Vehicle['@TransmissionType']}}</div>
+         <div>{{vehicleDetail.Vehicle['@FuelType']}}</div>
+         <div>{{vehicleDetail.Vehicle['@Code']}}</div>
+         <div>{{vehicleDetail.Vehicle['@CodeContext']}}</div>
+      </div>
+   </div>
+
+   <div class="round-edged comfort-details">
+      <ul>
+         <li ng-show="{{vehicleDetail.Vehicle['@AirConditionInd']}}">Air Conditioned</li>
+         <li>{{vehicleDetail.Vehicle['@DriveType']}} Drive Type</li>
+         <li>Fits {{vehicleDetail.Vehicle['@PassengerQuantity']}} Passengers</li>
+         <li>Fits {{vehicleDetail.Vehicle['@BaggageQuantity']}} Bags</li>
+      </ul>
+   </div>
+
+   <div class="round-edged vendor-details">
+      <div>{{vehicleDetail.vendor['@Name']}}</div>
+      <div>{{vehicleDetail.vendor['@Code']}}</div>
+   </div>
+
+   <div class="round-edged price">
+      <div>{{vehicleDetail.TotalCharge['@RateTotalAmount']}}</div>
+      <div>{{vehicleDetail.TotalCharge['@CurrencyCode'] }}</div>
+   </div>
+
+</div>
