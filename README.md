@@ -8,7 +8,8 @@ Uses angular framework and has two main views.
 Both views are made up of partial views
 
 Screenshots:
-To come
+![Alt text](/assets/screenshots/mainview.jpg?raw=true "Main View")
+![Alt text](/assets/screenshots/detailsview.jpg?raw=true "Main View")
 
 Demo:
 https://cdn.rawgit.com/kenca5ey/car-rental-app/master/index.html
